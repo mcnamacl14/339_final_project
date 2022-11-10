@@ -1,0 +1,182 @@
+.gallery{
+    border: 3px solid black;
+    width: 90%;
+    margin: 10px auto;
+    background-color: #e9e9e9;
+    display: grid;
+    grid-template-columns: auto;
+}
+.gallery img {
+    margin: 10px;
+}
+header img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.gallery img{
+    width:100%;
+    border: 5px solid #CC5500;
+    padding: 5px;
+    border-radius: 30%;
+}
+
+.lb-data .lb-caption {
+    font-size: 50px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: start;
+    background-color: black;
+    
+}
+nav li {
+    border: 2px solid #2F2F2F;
+    padding: 12px;
+    margin: 20px;
+    background: rgb(221, 88, 31);
+    background: linear-gradient(0deg, rgb(29, 15, 6) 0%, rgba(222, 96, 23, 0.828) 100%);
+    color: white;
+    border-radius: 10%;
+}
+nav a:visited {
+    color: white;
+}
+
+  nav li:hover{
+    background: white;
+    
+  }
+  nav a:hover {
+    color: black;
+  }
+
+  .container_gallery img {
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    border-radius: 20%;
+    padding: 5px;
+  }
+  .container_gallery p{
+    padding: 5px, 10px;
+    margin: 10px;
+  }
+
+  .container_gallery figcaption {
+    padding: 2px;
+    font-size: larger;
+    margin: 10px;
+  }
+  .container_gallery figure {
+    border: 10px double lightsalmon;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .container_gallery div {
+    padding: 2px;
+    margin: 10px;
+    color: rgb(82, 82, 82);
+  }
+
+  .NHS_LOGO {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* slideshow stuff  */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        background-color: black;
+        /* how do I make this the same width as the slideshow */
+        font-size: 30px;
+        padding: 8px 12px;
+        width: 100%;
+        margin-right: 20px;
+        text-align: center;
+      }
+
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: white;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      /* MEDIA QUERY FOR SCREEN SIZE */
+      /* @media screen and (min-width:600px)  {
+        
+      } */
