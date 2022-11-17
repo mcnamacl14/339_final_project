@@ -41,6 +41,9 @@ nav li {
     color: white;
     border-radius: 10%;
 }
+nav a {
+  color: white
+}
 nav a:visited {
     color: white;
 }
