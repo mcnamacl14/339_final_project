@@ -28,7 +28,7 @@ header img{
 
 nav ul{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     background-color: black;
     
 }
@@ -44,7 +44,9 @@ nav li {
 nav a:visited {
     color: white;
 }
-
+nav .current a:visited {
+  color: black;
+}
   nav li:hover{
     background: white;
     
@@ -81,7 +83,10 @@ nav a:visited {
     margin: 10px;
     color: rgb(82, 82, 82);
   }
-
+/* .container_gallery {
+  display:grid;
+  grid-template-columns: 1fr;
+} */
   .NHS_LOGO {
     width: 200px;
     height: 200px;
@@ -127,26 +132,37 @@ nav a:visited {
       }
       
       /* Caption text */
-      .text {
+      .slidetext {
         color: #f2f2f2;
         background-color: black;
         /* how do I make this the same width as the slideshow */
         font-size: 30px;
         padding: 8px 12px;
-        width: 100%;
-        margin-right: 20px;
+        flex-basis: 20%;
         text-align: center;
+        justify-items: center;
       }
-
+.navtext {
+  color: #f2f2f2;
+  background-color: black;
+  /* how do I make this the same width as the slideshow */
+  font-size: 30px;
+  padding: 8px 12px;
+  flex-basis: 20%;
+  text-align: center;
+  justify-items: center;
+  align-self: center;
+}
       
       /* Number text (1/3 etc) */
       .numbertext {
         color: white;
-        font-size: 20px;
+        font-size: 15px;
         padding: 8px 12px;
         position: absolute;
         bottom: 0;
         right: 0;
+        margin-right:5px;
       }
       
       /* The dots/bullets/indicators */
@@ -176,7 +192,68 @@ nav a:visited {
         to {opacity: 1}
       }
 
+
+      footer {
+        background-color: silver;
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        padding-top: 10px;
+  
+      }
+footer p {
+  margin: 10px 0
+}
+      .footer_img {
+        display: inline-block;
+        width:10%;
+        max-width: 30px;
+        padding: 5px;
+      }
+
+.navtext:hover a{
+  color: black;
+}
+    
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.skip {
+  background: white;
+  color: black;
+  height: 30px;
+  left: -250px;
+  padding: 8px;
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.skip:focus {
+  left: 10px
+}
+
+.current {
+  background: rgb(255,64,0);
+background: linear-gradient(90deg, rgba(255,64,0,1) 0%, rgba(255,109,40,1) 35%, rgba(255,64,0,1) 100%);
+border: 10px double white;
+}
+.current a {
+  color: black;
+}
       /* MEDIA QUERY FOR SCREEN SIZE */
-      /* @media screen and (min-width:600px)  {
-        
-      } */
+/* @media screen and (min-width:1500px)  {
+  .container_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* @media screen and (min-width:2200px)  {
+  .container_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+} */ 

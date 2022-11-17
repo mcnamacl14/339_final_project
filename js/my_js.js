@@ -34,12 +34,12 @@ function showSlides(n) {
 //end of slideshow thing
 
 let navs = document.getElementsByClassName(".navigation");
-let pages = document.querySelectorAll('.pages')
+let pages = document.querySelectorAll('.pages .text')
 
 for (var index = 0; index < pages.length; index++) {
     console.log("adding mouse over")
     console.log(pages[index])
-    pages[index].addEventListener('mouseover', function(){
+    pages[index].addEventListener('mouseenter', function(){
         document.querySelector('.text').style.color = "black"
     })
 }

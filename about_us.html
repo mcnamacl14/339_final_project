@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
     <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
 
@@ -11,17 +12,22 @@
 </head>
 <body>
     <header>
+        <a class="skip" href="#main">
+            Skip to content
+          </a>
+        <!-- Add a header for all 3 pages that matches -->
         <nav class="navigation">
             <ul class="pages">
-                <li class="text"><a href = "index.html">Home</a></li>
-                <li class="text"><a href="about_us.html"> About Us</a></li>
-                <li class="text"><a href="coaches.html">Our Coaches</a></li>
+                <li class="navtext"><a href = "index.html">Home</a></li>
+                <li class="navtext current"><a href="about_us.html"> About Us</a></li>
+                <li class="navtext"><a href="coaches.html">Our Coaches</a></li>
             </ul>
         </nav>
         <img src = "images/cover_image.jpg" width="800" alt = "">
     </header>
 
-    <main class = "gallery">
+
+    <main id = "main" class = "gallery">
         <img src="images/full-team-photo.jpeg" width = "200" alt="The 2022 Northville Track and Field Team">
         <img src="images/state_champs.jpg" width = "200" alt="The Men's 4x800 meter relay team winning the state championship in 2022">
         <img src="images/hurdle_ab.jpg"  width = "200" alt="Abby Byers jumping a hurdle">
@@ -34,9 +40,18 @@
         <img src="images/womens400.jpg" width = "200" alt="400 Runner Reece Slater taking off">
         <img src="images/pole_run.jpg" width = "200" alt="Senior Jack Gattoni running with his pole in hand">
         <img src="images/group_picture.jpg" width = "200" alt="Members of the Men's and Women's team smiling together">
-        
-
-        
+    </main>
+    <footer>
+        <p> Connect with us on social media or send us an <a href="mailto:runnorthville@example.com">Email!</a></p>
+        <p>45700 Six Mile Rd, Northville, MI 48168</p>
+ <div>
+        <a href="https://www.instagram.com/runnorthville/"><img class="footer_img"  src="images/instagram_icon.png" alt="Instagram's app Icon" ></a>
+        <a href="https://twitter.com/RunNorthville"><img class="footer_img" src="images/twitter_icon.png" alt="Twitter's app icon" ></a>
+        <a href="mailto:runnorthville@example.com"><img class="footer_img" src="images/good_email_icon.webp" alt="Email icon" ></a>
+        <a href="https://www.facebook.com/profile.php?id=100049463486243"><img class="footer_img" src="images/facebook_icon.webp" alt="Facebook's app Icon" ></a>
+    </div>
+<p>(734)-123-4567</p>
+    </footer>
 
 <script src="js/my_js.js"></script>
 </body>

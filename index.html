@@ -4,62 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Northville Track and Field</title>
 </head>
 <body>
     <header>
+        <a class="skip" href="#main">
+            Skip to content
+          </a>
         <nav class="navigation">
             <ul class="pages">
-                <li><a href = "index.html">Home</a></li>
-                <li><a href="about_us.html"> About Us</a></li>
-                <li><a href="coaches.html">Our Coaches</a></li>
+                <li class = "navtext current"><a href = "index.html">Home</a></li>
+                <li class = "navtext"><a href="about_us.html"> About Us</a></li>
+                <li class = "navtext"><a href="coaches.html">Our Coaches</a></li>
             </ul>
         </nav>
         <h1>Northville Track and Field </h1>
         <img src = "images/northville-winged-logo.png" width="800" alt = "Northville Track and Field Logo" class="NHS_LOGO">
-        
+    </header>
 <!-- I WANT THIS TO BE A SLIDESHOW -->
 <!--  -->
 
-
+<main id="main">>
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 6</div>
-      <img src="images/Shotput.jpg" style="width:100%">
-      <div class="text">Shot Put</div>
+      <img src="images/Shotput.jpg" style="width:100%" alt = "a female thrower launching a shotput">
+      <div class="slidetext">Shot Put</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">2 / 6</div>
-      <img src="images/girls_relay.jpg" style="width:100%">
-      <div class="text">Girls Relay Team</div>
+      <img src="images/girls_relay.jpg" style="width:100%" alt = "two female runners completing a handoff and passing the baton">
+      <div class="slidetext">Girls Relay Team</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 6</div>
-      <img src="images/Hurdles.JPG" style="width:100%">
-      <div class="text">Hurdles</div>
+      <img src="images/Hurdles.JPG" style="width:100%" alt = "a female hurdler jumping a barrier">
+      <div class="slidetext">Hurdles</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext"> 4 / 6</div>
-        <img src="images/High_jump.JPG" style="width:100%">
-        <div class="text">High Jump</div>
+        <img src="images/High_jump.JPG" style="width:100%" alt = "a female high jumper clearing the bar">
+        <div class="slidetext">High Jump</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">5 / 6</div>
-        <img src="images/mens_discus.jpg" style="width:100%">
-        <div class="text">Discus</div>
+        <img src="images/mens_discus.jpg" style="width:100%" alt = "a men's discus thrower in the throwing ring">
+        <div class="slidetext">Discus</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">6 / 6</div>
-        <img src="images/boys_relay.jpg" style="width:100%">
-        <div class="text">Boys Relay</div>
+        <img src="images/boys_relay.jpg" style="width:100%" alt = "two members of the boys team handing off a baton">
+        <div class="slidetext">Boys Relay</div>
     </div>
     
   
@@ -79,8 +83,6 @@
     <span class="dot" onclick="currentSlide(6)"></span>
   </div>
 
-    </header>
-
     <div>
         <h3>Our Mission</h3>
         <p>The Northville High School Track and Field team is dedicated to inspire, challenge, and embolden the student-athletes of Northville High School to mature and grow academically, competitively, and benevolently. The mission of our track program is to provide opportunities for our student-athletes to develop skills which allow them to succeed as students, athletes, citizens, and leaders. NHSTF encourages our student-athletes to exemplify and demonstrate a winning work-ethic, positive sportsmanship, zeal for philanthropy, and respect for all others. We pride ourselves on our ability to develop our program which encourages participation from all ability levels, while providing a personalized learning environment for each event, through our close-knit, dedicated team of coaches and athletes. 
@@ -89,8 +91,21 @@
     </div>
     <div class="titles">
         <h4>Titles</h4>
-        
     </div>
+</main>
+
+    <footer>
+        <p> Connect with us on social media or send us an <a href="mailto:runnorthville@example.com">Email!</a></p>
+        <p>45700 Six Mile Rd, Northville, MI 48168</p>
+ <div>
+        <a href="https://www.instagram.com/runnorthville/"><img class="footer_img"  src="images/instagram_icon.png" alt="Instagram's app Icon" ></a>
+        <a href="https://twitter.com/RunNorthville"><img class="footer_img" src="images/twitter_icon.png" alt="Twitter's app icon" ></a>
+        <a href="mailto:runnorthville@example.com"><img class="footer_img" src="images/good_email_icon.webp" alt="Email icon" ></a>
+        <a href="https://www.facebook.com/profile.php?id=100049463486243"><img class="footer_img" src="images/facebook_icon.webp" alt="Facebook's app Icon" ></a>
+    </div>
+<p>(734)-123-4567</p>
+    </footer>
+    
 <script src="js/my_js.js"></script>
 </body>
 </html>
