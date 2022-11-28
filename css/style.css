@@ -8,6 +8,12 @@
     grid-template-columns: 1fr;
     
 }
+.h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .gallery img {
     /* display: grid; may not need */
     margin: 10px;
@@ -321,6 +327,9 @@ padding: 10px;
   }
   nav ul {
     justify-content:flex-start;
+  }
+  body {
+    background-color: rgba(255, 152, 87, 0.914);;
   }
 }
 /* homework 5 */
